@@ -1,0 +1,3 @@
+2026-03-07T13:21:43.233 FATAL console - The specified service does not exist as an installed service.
+2026-03-07T13:21:45.114 INFO  console - Uninstalling service 'Windows Service WinWtSvc (WinWtSvc)'...
+2026-03-07T13:21:45.576 WARN  console - Service 'Windows Service WinWtSvc (WinWtSvc)' does not exist.
