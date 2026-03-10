@@ -49,6 +49,7 @@ javac -encoding UTF-8 -d %OUT_DIR% ^
   launch\app\config\Config.java ^
   launch\app\helpers\SimpleBuilder.java ^
   launch\app\helpers\SimpleDownloader.java ^
+  launch\app\helpers\SimpleGit.java ^
   launch\app\helpers\SimpleProcess.java ^
   launch\app\watchdog\CurrentKiller.java ^
   launch\app\watchdog\ManagedProcess.java ^
@@ -128,6 +129,8 @@ if errorlevel 1 (
     pause & exit /b 1
 )
 echo %GREEN%[OK]%RESET% WinSW files copied.
+xcopy "bin\installer" "%DEPLOY_DIR%\bin\installer\" /e /i /q
+echo %GREEN%[OK]%RESET% Installer scripts copied.
 
 echo.
 echo %CYAN%[INFO]%RESET% [9/9] Dong goi Windows service...
